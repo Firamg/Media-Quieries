@@ -1,0 +1,247 @@
+.nav{
+    background-color: #4f9a94;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    /*padding: 5px;
+    margin: 0px;*/
+    grid-area: nav;
+}
+
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.dog-img{
+    padding-right: 25px;
+    padding-left: 15px;
+}
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+
+}
+/*div{
+    margin: 0px;
+    padding: 0px;
+}*/
+.filters p,select{
+    /*background-color: gainsboro;*/
+    margin: 0px;
+    padding: 0px;
+}
+
+.filters{
+    background-color: rgb(247, 247, 247);
+    grid-area: filt;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.filters p{
+    padding-bottom: 10px;
+    /*font-weight: bold;*/
+    font-size: 1.2em;
+}
+select{
+    width: 80%;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.img-min{
+    background-position: center;
+    background-size: cover;
+    width:  90%;
+    /*justify-content: center;
+    align-content: center;*/
+}
+
+.conteiner2, .conteiner3, .conteiner4, .conteiner5, .conteiner6, .conteiner7, .conteiner8, .conteiner9, .conteiner10{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+    border: solid 1px gainsboro;
+    padding-top: 1.8em;
+    padding-bottom: 1.2em;
+    grid-area: conteinerx;
+
+    
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body p{
+    font-size: 1.3em;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+
+}
+a{
+    text-decoration: none;
+}
+
+
+.main-footer{
+    background-color: #4f9a94;
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+    padding: 0.5em;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.main-footer a{
+    color: white;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    /*grid-area: pag;*/
+    display: flex;
+    justify-content: center;
+    /*border: #4f9a94 solid 1px;*/
+}
+
+.pagination{
+    grid-area: pag;
+}
+.pagination li{
+    border: rgb(200, 198, 198) solid 1px;
+    padding: .8em;
+    color: #4f9a94;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #80cbc4;
+    padding: 1em;
+}
+
+.fp p{
+    font-size: 1.2em;
+    
+
+}
+
+.conteirner{
+    display: grid;
+    grid-template-rows: 1fr 1fr 7fr 1fr 1fr;
+    grid-template-areas: 
+    "nav"
+    "filt"
+    "main"
+    "pag"
+    "footer";
+
+}
+
+.main2{
+    display: none;
+}
+
+.nav-list{
+    display: none;
+}
+
+.grid-conteiner{
+    grid-area: main2;
+}
+
+@media (min-width: 576px){
+    .conteiner{
+        display: grid;
+        /*grid-template-columns: 1fr 9fr;*/
+        grid-template-areas: 
+        "nav filt filt"
+        "nav main2 main2"
+        "footer main2 main2"
+        "footer pag pag";
+        /*grid-template-rows: 3fr 1fr;*/
+
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 0.5em;
+        /*padding-right: 1em;*/
+    }
+    .nav-left{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: flex-start;
+        padding-right: 0.5em;
+    }
+    .nav-left h1{
+        font-size: 1.3em;
+        justify-content: center;
+        padding-right: 1em;
+    }
+    .nav-left i{
+        font-size: 2em;
+        padding: 0.5em;
+    }
+
+    .nav-right i{
+
+        display: none;
+   
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        padding-right: 2.5em;
+    }
+    .nav-list ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+    }
+    .fp{
+        text-align: center;
+        justify-content: center;
+        /*color: grey;*/
+
+    }
+
+    .main{
+        display: none;
+    }
+
+    .main2{
+        display: flex;
+        /*flex-wrap: wrap;*/
+    }
+
+
+   
+
+    
+    
+}
